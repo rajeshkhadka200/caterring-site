@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+*{
+    margin: 0;
+    padding:0;
+}
+
+span{
+    padding: 20px 40px;
+    text-align: center;
+    cursor: pointer;
+    background: #ae82ef;
+}
+.active{
+    background:#fff;
+}
+
+body{
+    background: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <span>
+        click me
+    </span>
+</body>
+<script>
+var btn  = document.querySelector("span");
+var clicked = false;
+btn.addEventListener("click",function(){
+document.body.classList.toggle("active")
+})
+
+</script>
+</html>

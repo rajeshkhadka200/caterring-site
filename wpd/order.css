@@ -1,0 +1,715 @@
+/* universal border -radius */
+*{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.more , .fil{
+  border-radius: 3px;
+}
+
+
+.select__food {
+text-align: center;
+}
+.select__food > h2{
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.photos{
+    width: 100%;
+    display: grid;
+    grid-auto-rows:   170px ;
+    grid-template-columns: repeat(auto-fit, minmax(170px , 300px) );
+    margin-top: 70px;
+    grid-gap: 20px;
+    justify-content: center;
+ 
+}
+
+.photos__ch{
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform:  rotate(-20deg) scale(0.8);
+    transition: transform 0.5s , opacity 0.5s;
+
+}
+ 
+.photos__ch:nth-child(1){
+    background: url("img/mutton.jpg");
+    background-size: cover;
+
+  }
+  .photos__ch:nth-child(2){
+    background: url("img/chicken_roast.jpeg");
+    background-size: cover;
+
+  }
+
+  .photos__ch:nth-child(3){
+    background: url("img/bhat.jpg");
+    background-size: cover;
+    /* background-size: ; */
+    background-position: center;
+
+  }
+  .photos__ch:nth-child(4){
+    background: url("img/khir.jpg");
+    background-size: cover;
+    background-position: right;
+
+  }
+  .photos__ch:nth-child(5){
+    background: url("img/puri.jpg");
+    background-position: right ;
+    background-size: cover;
+  }
+  .photos__ch:nth-child(6){
+    background: url("img/mix__vegitable.jpg");
+    background-size: cover;
+
+  }
+  .photos__ch:nth-child(7){
+    background: url("img/mix__fruit.jpeg");
+    background-size: cover;
+
+  }
+  .photos__ch:nth-child(8){
+    background: url("img/aachar.jpg");
+    background-size: cover;
+
+  }
+  .photos__ch:nth-child(9){
+    background: url("img/phulki.jpeg");
+    background-size: cover;
+    /* background-position: center; */
+
+  }
+  .photos__ch:nth-child(10){
+    background: url("img/gulab__jammun__white.jpeg");
+    background-size: cover;
+    background-position: center;
+
+  }
+  .photos__ch:nth-child(11){
+    background: url("img/halua.jpg");
+    background-size: cover;
+    background-position: center ;
+
+  
+  }
+  .photos__ch:nth-child(12){
+    background: url("img/gullabjamun.jpg");
+    background-size: cover;
+    background-position: center;
+
+  }
+  .photos__ch:nth-child(13){
+    background: url("img/candy-sugar-party-colorful-108370.jpg");
+    background-size: cover;
+
+  }
+  .photos__ch:nth-child(14){
+    background: url("img/panir_mattar.webp");
+    background-size: cover;
+
+  } 
+
+/* add the style for the food here  */
+
+.photos__ch:nth-child(15){
+  background: url("img/jera_rice.jpg");
+  background-size: cover;
+
+}   
+.photos__ch:nth-child(16){
+  background: url("img/vegitable_pulao.JPG");
+  background-size: cover;
+
+}
+.photos__ch:nth-child(17){
+  background: url("img/navaratan_pulao.jpg");
+  background-size: cover;
+
+}  
+
+.photos__ch:nth-child(18){
+  background: url("img/");
+  background-size: cover;
+
+}  
+
+.photos__ch:nth-child(19){
+  background: url("img/dalrajma.jpg");
+  background-size: cover;
+
+}  
+
+.photos__ch:nth-child(20){
+  background: url("img/dalfry.jpg");
+  background-size: cover;
+
+}
+
+.photos__ch:nth-child(21){
+  background: url("img/kaulichana.jpg");
+  background-size: cover;
+
+}
+
+.photos__ch:nth-child(22){
+  background: url("img/kaulichanapaneer.jpg");
+  background-size: cover;
+
+}
+
+.photos__ch:nth-child(23){
+  background: url("img/papads.jpg");
+  background-size: cover;
+
+}
+
+
+.photos__ch:nth-child(24){
+  background: url("img/sahi paneer.jpg");
+  background-size: cover;
+
+}
+
+
+.photos__ch:nth-child(25){
+  background: url("img/kadai paneer.jpg");
+  background-size: cover;
+
+}
+
+
+.photos__ch:nth-child(26){
+  background: url("img/paneer butter masala.png");
+  background-size: cover;
+
+}
+
+
+.photos__ch:nth-child(27){
+  background: url("img/mosp.jpg");
+  background-size: cover;
+
+}
+.photos__ch:nth-child(28){
+  background: url("img/jery.jpg");
+  background-size: cover;
+
+}
+
+.photos__ch:nth-child(29){
+  background: url("img/raita.jpg");
+  background-size: cover;
+
+}
+
+.photos__ch:nth-child(30){
+  background: url("img/tea.jpg");
+  background-size: cover;
+
+}
+.photos__ch:nth-child(31){
+  background: url("img/coffie.jpg");
+  background-size: cover;
+
+}
+
+.photos__ch:nth-child(32){
+  background: url("img/cold drink.jpg");
+  background-size: cover;
+
+}
+.photos__ch:nth-child(33){
+  background: url("img/tanduri roti.jpg");
+  background-size: cover;
+
+}
+
+.photos__ch:nth-child(34){
+  background: url("img/cake.jpg");
+  background-size: cover;
+
+}
+
+ 
+
+
+
+
+/* add the css here */
+.rev{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  background: #333;
+}
+.rev > h3{
+  line-height: 40px;
+
+}
+ 
+  .num{
+    height: 10px ;
+    padding: 10px;
+    width: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    /* filter: ; */
+    
+
+  }
+  .photos__ch:nth-child(n+20){
+display: none;
+  }
+  .more{
+   width: 70%;
+   max-width: 400px;
+   margin: 0 auto;
+   margin-top: 100px;
+    
+  }
+ .filter{
+position: fixed;
+bottom: calc(0%);
+background: #333;
+left: 0;
+display: flex;
+justify-content: space-around;
+align-items: center;
+text-transform: capitalize;
+color: #fff;
+align-items: center;
+font-size: 1em;
+height: 0px;
+width: 100%;
+opacity: 0;
+pointer-events: none;
+box-shadow: 0px 0px 3px rgba(105, 105, 105, 0.336);
+transition: height 0.5s , opacity 0.3s;
+
+ }
+ .select__food{
+   margin-top: 30px;
+ }
+  
+  .fil{
+   /* color: white; */
+   /* background: white; */
+   
+    height: 40px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#333;
+    color: #fff;
+    cursor:pointer;
+
+    /* margin-right: 0px; */
+ }
+ .fil:hover i{
+   transform: scale(1.2);
+ }
+ input[type = "radio"],
+ input[type=checkbox]{
+   display: none;
+ }
+ .label{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ label:hover{
+cursor: pointer;
+ }
+ .search{
+ transition: 0.5s all ;
+display: grid;
+grid-template-columns:  0fr 40px ;
+grid-template-rows: 40px;
+height: 40px;
+/* border: 1px solid #333; */
+justify-content: right;
+width: 75%;
+margin-right: 5px;
+
+ 
+/* justify-items: center; */
+/* text-align: center;   */
+ 
+} input[type=text]{
+
+   grid-row: 1/2;
+   /* width: auto; */
+    width: 0;
+   grid-column: 1/2;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   outline: none;
+   border: none;
+   color: #fff;
+   transition: 0.5s all;
+/* grid-column: ; */
+   /* width: auto; */
+ font-size: 16px ;
+ }
+ ::-webkit-input-placeholder{
+   color: rgba(255, 255, 255, 0.836);
+   font-size: 15px;
+   font-weight: 300;
+ }
+
+ .search i{ 
+height: 40px;
+width: 40px;
+cursor:pointer;
+line-height: 40px;
+text-align: center;
+
+color: #fff;
+font-size: 20px;
+/* border: 1px solid rgba(51, 51, 51, 0); */
+ 
+/* border-top-right-radius: 20px;
+border-bottom-right-radius: 20px; */
+border-radius: 20px;
+background: rgb(71, 71, 71);
+
+} 
+.search i:hover{
+font-size: 23px;
+background: #444;
+}
+.section__two__order__html > h3{
+  margin-top: 100px;
+  font-size: 2.8em;
+  color: #454545;
+}
+.dip_fl_center{
+  font-size:1.4em;
+display: flex;
+align-items: left;
+flex-direction:column ;
+margin-top: 40px;
+margin-left: 50px;
+
+}
+
+.section__two__order__html >label{
+  margin-top: 20px;
+  
+}
+.section__two__order__html{
+  margin-top:200px;
+}
+.dip_fl_center > label{
+  font-size: 1.6em;
+  color: #8a8f94;
+}
+.rev{
+  text-transform: capitalize;
+}
+.select__food > h3{
+  color: #454545;
+}
+.select__food > h2{
+  color: #5b5c5e;
+}
+.con_nav_search_filter{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 60px;
+  right: 2px;
+  
+  z-index: 100000;
+  opacity: 0;
+  width: 110px;
+  transition: all 0.8s;
+  /* background:#fff; */
+}
+.flter_child_fill_class{
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  background: #fff;
+  color: #333;
+  cursor:pointer;
+}
+.flter_child_fill_class:hover{
+  background: #e8e8e8;
+}
+#radio_filter:checked +  div {
+color: green;
+}
+.tgl_search{
+ opacity: 1;
+
+}
+.active_fl, .active_fl1{
+  height: 60px;
+  opacity: 1;
+pointer-events: all;
+}
+
+.animate{
+  transform:  rotate(0deg) scale(1);
+  opacity: 1;
+}
+
+.section__two__order__html:nth-of-type(2){
+display: none;
+}
+
+textarea{
+  resize:none;
+  width: calc(90% - 40px);
+  height: calc(200px - 40px);
+  max-width: calc(600px - 40px);
+  max-height: calc(2000px - 40px);
+  overflow: hidden;
+  outline: none;
+  border: 1px solid rgb(141, 141, 141);
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 1.1em;
+  text-transform: capitalize;
+  margin: 0 auto;
+
+}
+/* 
+.main_ifo_user{
+
+} */
+
+.main_ifo_user > h1{
+  margin-top: 100px;
+text-align: center;
+color: #454545;
+text-transform: capitalize;
+ }
+.main_ifo_user > label{
+  display: grid;
+  width: 90%;
+   
+  height: 40px;
+  max-width: 600px;
+  grid-template-columns: 50px 50px 1fr;
+  /* border: 1px solid #333; */
+  margin: 0 auto;
+  margin-top: 50px;
+  
+}
+
+.main_ifo_user > label > span{
+  line-height: 40px;
+  color: #333;
+  font-weight: bold;
+  background: linear-gradient(45deg,#d8d8d8,#c8c8c8);
+
+}
+.flg > img{
+ height: 25px;
+ 
+
+}
+.flg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg,#e8e8e8,#d8d8d8);
+  border-radius: 5px 0px 0px 5px ;
+}
+ 
+
+.main_ifo_user > label > input{
+  border: none;
+  outline: none;
+  border-radius: 0px 5px 5px 0px ;
+  background:  linear-gradient(45deg,#c8c8c8,#b8b8b8);
+}
+.main_ifo_user > .text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.main_ifo_user > .btn{
+  
+   margin: 0 auto ;
+  margin-top: 20px;
+}
+
+.main_ifo_user > .btn {
+  width: 60%;
+  max-width: 400px;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  /* background: ; */
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3em;
+  cursor: pointer;
+  padding: 15px 0px;
+  background: rgb(120, 255, 48);
+  border-radius: 5px;
+}
+ 
+.main_ifo_user > .btn > i {
+  font-size: 1.3em;
+  color: rgb(51, 51, 51);
+}
+.main_ifo_user > label > input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+color: #747474;
+font-size: 1.2em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  font-weight: bold;
+  font-size: 1em;
+}
+.fa-toggle-on {
+color:rgba(49, 180, 126, 0.842);
+}
+.on{
+  color: #111111;
+}
+.turned_on {
+  color: #333;
+}
+.this_is_try{
+  cursor: pointer;
+  color: #f1f1f1;
+  /* padding-left:50px ; */
+  text-align: left;
+}
+.this_is_try > *{
+  pointer-events: none;
+}
+.this_is_try > i{
+  padding-right: 15px;
+  font-size: 0.9em;
+  width: 50px;
+}
+.toggle_anim{
+padding-right: 20px;
+}
+.take_this{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.take_this > i{
+  padding-right: 5px;
+  color: #333;
+}
+@media only screen and (max-width:600px){
+ .take_this > *  {
+   display: none;
+ }
+ .take_this > i{
+  line-height: 60px;
+font-size: 1.5em;
+ }
+}
+ 
+
+
+
+
+
+ 
+@media only screen and (max-width:800px){
+  .section__two__order__html > h3{
+    font-size: 2em;
+  }
+  .dip_fl_center{
+    font-size:1.3em;
+  }
+  
+}
+
+
+.box{
+  min-height: 250px;
+  max-height: 350px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0) rotate(-10deg);
+  background: rgb(245, 245, 245);
+  box-shadow: 0px 0px 20px #0000002d,
+              0px 0px 40px #0000002d,
+              0px 0px 60px #0000002d;
+  z-index: 100000;
+  border-radius: 5px;
+  text-align: center;
+  display: none;
+
+}
+.box > .ti{
+  font-size: 2em;
+  font-weight: bolder;
+  color: #333;
+  text-transform: uppercase;
+  margin: 20px 0px 0px 0px;
+}
+.loader{
+  height: 5px;
+  border: 1px solid rgb(109, 109, 109);
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+}
+.loader > .ins{
+  height: 100%;
+  width: 0%;
+  background: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.box > a{
+  text-decoration:none;
+  height: 100px;
+  padding: 10px 40px;
+  line-height: 100px;
+  margin: 0 auto;
+  background:#78FF30;
+  margin-top: 40px;
+}
+#imp{
+  color: rgb(179, 32, 32);
+}
